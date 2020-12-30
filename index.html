@@ -8,11 +8,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
 
-    <title>Sandhika Galih & Angga Risky</title>
+    <title>SEITS</title>
   </head>
   <body>
 
@@ -20,17 +22,17 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-        <a class="navbar-brand" href="#">SandhiGa</a>
+        <a class="navbar-brand" href="/">SEITS Academy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> 
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Pricing</a>
-            <a class="nav-item nav-link" href="#">Features</a>
-            <a class="nav-item nav-link" href="#">About</a>
-            <a class="nav-item nav-link btn btn-primary text-white tombol" href="#">Join Us</a>
+            <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="/programs">Programs</a>
+            <a class="nav-item nav-link" href="/events">Events</a>
+            <a class="nav-item nav-link" href="/blog">Blog</a>
+            <a class="nav-item btn btn-success text-white tombol" href="#">Join Us</a>
           </div>
         </div>
       </div>
@@ -40,8 +42,7 @@
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Get work done <span>faster</span> <br>and <span>better</span> with us</h1>
-        <a href="#" class="btn btn-primary tombol">Our Work</a>
+        <h1 class="display-4"><span>Explore developments in digital science</span><br><span>and seize real-life career opportunities</span></h1>
       </div>
     </div>
     <!-- akhir Jumbotron -->
@@ -50,83 +51,121 @@
     <!-- container -->
     <div class="container">
 
-      <!-- info panel -->
-      <div class="row justify-content-center">
-        <div class="col-10 info-panel">
-          <div class="row">
-            <div class="col-sm">
-              <img src="img/employee.png" alt="Employee" class="img-fluid float-left">
-              <h4>24 Hours</h4>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="col-lg">
-              <img src="img/hires.png" alt="HiRes" class="img-fluid float-left">
-              <h4>High-Res</h4>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="col-lg">
-              <img src="img/security.png" alt="Security" class="img-fluid float-left">
-              <h4>Security</h4>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- akhir info panel -->
-
-
       <!-- Workingspace -->
       <div class="row workingspace">
-        <div class="col-lg-6">
-          <img src="img/workingspace.png" alt="Working Space" class="img-fluid">
+        <div class="col-lg-6 justify-content-center d-flex">
+          <img src="img/About-SYNRGY-Academy.jpg" alt="Working Space" class="img-fluid">
+          <img src="img/students1.jpg" alt="Working Space" class="img-fluid">
+          <img src="img/students3.jpg" alt="Working Space" class="img-fluid">
+          <img src="img/Team_Operations.jpg" alt="Working Space" class="img-fluid">
+          <img src="img/students2.jpg" alt="Working Space" class="img-fluid">
         </div>
         <div class="col-lg-5">
-          <h2>You <span>Work</span> Like at <span>Home</span></h2>
-          <p>Bekerja dengan suasana hati yang lebih asik, menyenangkan
-            dan mempelajari hal baru setiap harinya.</p>
-          <a href="#" class="btn btn-success tombol">Gallery</a>
+          <h2>Achieve <span>Dream career</span> with us</h2>
+          <li>Interactive learning</li>
+          <li>Curriculum according to technology trends</li>
+          <li>Discussion with facilitator</li>
+          <li>Helped to find work after graduation</li>
+          <a href="/programs" class="btn btn-success tombol">Programs</a>
         </div>
       </div>
       <!-- akhir Workingspace -->
 
+      <script>
+        var slideIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("img-fluid");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+          }
+          slideIndex++;
+          if (slideIndex > x.length) {slideIndex = 1} 
+          x[slideIndex-1].style.display = "block"; 
+          setTimeout(carousel, 4000); 
+        }
+      </script>
+        
 
       <!-- Testimonial -->
       <section class="testimonial">
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <p>"Bekerja dengan suasana hati yang lebih asik, menyenangkan
-              dan mempelajari hal baru setiap harinya."</p>
+            <h1><span>Words from Our Students</h1>
+          </div>
+          <div class="col-lg-8">
+            <div class="testimonial-con" id="Testimonial 1">
+              <p>"Being one of SEITS Academy students is one of the most memorable and challenging achievement in my life. Being able to learn programming from zero to become a professional developer has been my long life dream"</p>
+            </div>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-6 justify-content-center d-flex">
-            <img src="img/img1.png" alt="Testimonial 1">
-            <img src="img/img2.png" alt="Testimonial 2" class="img-main">
-            <img src="img/img3.png" alt="Testimonial 3">
+            <div class="testimonial-pics">
+              <img src="img/p2.png" alt="Testimonial 1">
+              <img src="img/p3.png" alt="Testimonial 2" class="active">
+              <img src="img/p4.png" alt="Testimonial 3">
+            </div>
           </div>
         </div>
         <div class="row justify-content-center info-text">
           <div class="col-lg text-center">
-            <h5>Sunny Ye</h5>
-            <p>Designer</p>
+            <h5>Eminy Jack</h5>
+            <p>Web Developer</p>
           </div>
         </div>
       </section>
+      <!-- <script type="text/javascript">
+        $('.testimonial-pics img').click(function(){
+          $(".testimonial-pics img").removeClass("active");
+          $(this).addClass("active");
+          $(".testimonial-con").removeClass("active");
+        $("#"+$(this).attr("alt")).addClass("active");
+        });
+      </script> -->
       <!-- akhir Testimonial -->
-
-
     </div>
     <!-- akhir container -->
 
 
+    <!-- footer -->
+    <!-- Contact-->
+    <footer>
+      <section class="contact" id="contact">
+        <div class="wrapper">
+          <div class="wrapper-contact">
+            <ul>
+              <li> 
+                <a href="mailto:inez.amanda16@gmail.com">
+                  <i class='fas fa-at' style='font-size:24px'> Mail</i>
+                </a> 
+              </li>
+              <li> 
+                <a href="https://www.linkedin.com/in/inez-yulia-amanda-5b80961b6">
+                  <i class='fab fa-linkedin' style='font-size:24px'> Linkedin</i>
+                </a> 
+              </li>
+              <li> 
+                <a href="tel:0813-4226-2309">
+                  <i class='fas fa-phone-alt' style='font-size:24px'> Phone</i>
+                </a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- akhir Contact-->
+      <p>&copy; 2020. Inez Yulia Amanda All Rights Reserved.</p>
+    </footer>
+    <!-- Akhir footer -->
+  </body>
 
-
-    
-
-    <!-- Optional JavaScript -->
+  <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+
 </html>
