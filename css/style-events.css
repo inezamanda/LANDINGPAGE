@@ -6,7 +6,7 @@
 
 /* Jumbotron */
 .jumbotron {
-    background: url(../img/Team_Product.jpg);
+    background: url(../img/conference-showcase-SDH.jpg);
     background-size: cover;
     height: 540px;
     position: relative;
@@ -33,7 +33,7 @@
 .jumbotron .display-4 {
     font-weight: 200;
     font-size: 2em;
-    margin-top: 150px;
+    margin-top: 200px;
     text-align: center;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     margin-bottom: 50px;
@@ -45,29 +45,28 @@
 
 
 /* Workingspace */
-.workingspace {
+.events {
     margin-top: 90px;
     text-align: center;
 }
 
-.workingspace img {
+.events img {
     margin-bottom: 20px;
     border-radius: 3%;
-    height: 250px;
 }
 
-.workingspace h2 {
+.events h2 {
     font-size: 52px;
     text-transform: uppercase;
     font-weight: 200;
     margin-bottom: 10px;
 }
 
-.workingspace h2 span {
+.events h2 span {
     font-weight: 500;
 }
 
-.workingspace li {
+.events p {
     font-size: 18px;
     color: #ACACAC;
     font-weight: 200;
@@ -252,12 +251,12 @@ footer p {
 
     .jumbotron {
         margin-top: -90px;
-        height: 830px;
+        height: 640px;
     }
 
     .jumbotron .display-4 {
         font-size: 3.5em;
-        margin-top: 260px;
+        margin-top: 200px;
     }
 
 
@@ -265,11 +264,11 @@ footer p {
         text-align: left;
     }
 
-    .workingspace img {
+    .events img {
         height: 350px;
     }
 
-    .workingspace .col-lg-5{
+    .events .col-lg-5{
         margin-left: 20px;
     }
 

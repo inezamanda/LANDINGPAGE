@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link type="text/css" rel="stylesheet" href="/css/style.css">
+    <link type="text/css" rel="stylesheet" href="/css/style-programs.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <!-- Manifest -->
@@ -37,8 +37,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> 
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link active" href="/index.html">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="/program.html">Programs</a>
+            <a class="nav-item nav-link" href="/index.html">Home</a>
+            <a class="nav-item nav-link active" href="/program.html">Programs<span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="/events.html">Events</a>
             <a class="nav-item nav-link" href="/blog">Blog</a>
             <a class="nav-item btn btn-success text-white tombol" href="#">Join Us</a>
@@ -51,7 +51,7 @@
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4"><span>Explore developments in digital science</span><br><span>and seize real-life career opportunities</span></h1>
+        <h1 class="display-4"><span>SEITS PROGRAMS</span></h1>
       </div>
     </div>
     <!-- akhir Jumbotron -->
@@ -60,81 +60,32 @@
     <!-- container -->
     <div class="container">
 
-      <!-- Workingspace -->
-      <div class="row workingspace">
-        <div class="col-lg-6 justify-content-center d-flex">
-          <img src="img/About-SYNRGY-Academy.jpg" alt="Working Space" class="img-fluid">
-          <img src="img/students1.jpg" alt="Working Space" class="img-fluid">
-          <img src="img/students3.jpg" alt="Working Space" class="img-fluid">
-          <img src="img/students2.jpg" alt="Working Space" class="img-fluid">
+      <!-- Program -->
+      <h3>Choose Your Class</h3>
+      <div class="row program">
+        <div class="col-lg-3 justify-content-center">
+            <h2>Fullstack Web Development</h2>
+            <a href="/fullstack"><img src="img/fullstack_web_development.jpeg" alt="program" class="img-fluid"></a>
+            <p>Start your adventure to become the ideal Web Developer for many companies by joining the Full-stack web development class! You will be tutored from scratch by experienced facilitators and assisted in getting your ideal job after graduation.</p>
         </div>
-
-        <div class="col-lg-5">
-          <h2>Achieve <span>Dream career</span> with us</h2>
-          <li>Interactive learning</li>
-          <li>Curriculum according to technology trends</li>
-          <li>Discussion with facilitator</li>
-          <li>Helped to find work after graduation</li>
-          <a href="/program.html" class="btn btn-primary tombol">Programs</a>
+        <div class="col-lg-3 justify-content-center">
+            <h2>Android Engineering</h2>
+            <a href="/android"><img src="img/android_engineering.jpeg" alt="program" class="img-fluid"></a>
+            <p>Start your adventure to become the company's ideal software developer by taking an Android engineering class! You will be tutored from scratch by experienced facilitators and assisted in getting your ideal job after graduation.</p>
+        </div>
+        <div class="col-lg-3 justify-content-center">
+            <h2>Product Management</h2>
+            <a href="/product"><img src="img/product_management.jpeg" alt="program" class="img-fluid"></a>
+            <p>Start your journey to become the Product Manager of many companies by joining the product management class! You will learn to build relationships with the engineering & UI / UX division and search, visualize, and make data-driven decisions with business intelligence tools.</p>
+        </div>
+        <div class="col-lg-3 justify-content-center">
+            <h2>UI/UX<br>Design</h2>
+            <a href="/uiux"><img src="img/ui_ux_design.jpeg" alt="program" class="img-fluid"></a>
+            <p>The most appropriate class for those of you who are creative, have lots of ideas, and want to explore research. The curriculum is designed by professionals from the unicorn company. You will be assisted by a facilitator during the learning process and assisted in getting your ideal job after graduation.</p>
         </div>
       </div>
-      <!-- akhir Workingspace -->
+      <!-- akhir Program -->
 
-      <script>
-        var slideIndex = 0;
-        carousel();
-        
-        function carousel() {
-          var i;
-          var x = document.getElementsByClassName("img-fluid");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none"; 
-          }
-          slideIndex++;
-          if (slideIndex > x.length) {slideIndex = 1} 
-          x[slideIndex-1].style.display = "block"; 
-          setTimeout(carousel, 4000); 
-        }
-      </script>
-        
-
-      <!-- Testimonial -->
-      <section class="testimonial">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h1><span>Words from Our Students</h1>
-          </div>
-          <div class="col-lg-8">
-            <div class="testimonial-con" id="Testimonial 1">
-              <p>"Being one of SEITS Academy students is one of the most memorable and challenging achievement in my life. Being able to learn programming from zero to become a professional developer has been my long life dream"</p>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-6 justify-content-center d-flex">
-            <div class="testimonial-pics">
-              <img src="img/p2.png" alt="Testimonial 1">
-              <img src="img/p3.png" alt="Testimonial 2" class="active">
-              <img src="img/p4.png" alt="Testimonial 3">
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center info-text">
-          <div class="col-lg text-center">
-            <h5>Eminy Jack</h5>
-            <p>Web Developer</p>
-          </div>
-        </div>
-      </section>
-      <!-- <script type="text/javascript">
-        $('.testimonial-pics img').click(function(){
-          $(".testimonial-pics img").removeClass("active");
-          $(this).addClass("active");
-          $(".testimonial-con").removeClass("active");
-        $("#"+$(this).attr("alt")).addClass("active");
-        });
-      </script> -->
-      <!-- akhir Testimonial -->
 
       <!-- Contact-->
       <section class="contact" id="contact">
